@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Remove class</title>
+    <style>
+        #box{
+                width: 600px;
+                border: 2px solid black;
+                margin: 0 auto;
+                transition: 1s;
+        }
+        button{
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            cursor: pointer;
+            
+        }
+        .bg{
+            background-color: blue;
+            padding: 20px;
+        }
+        </style>
+</head>
+<body>
+    <div id="box">
+        <h1>After Add class</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab et impedit quaerat. Maxime ea alias rem eos, culpa nulla id commodi asperiores laborum labore! Numquam fugit iste mollitia nostrum dolor.</p>
+    </div>
+        <button id="Append">add appendclass</button>
+        <button id="Prepend">add Prepend class</button>
+    
+
+        <script>
+          $('#Append').click(function () {
+            $('#box').append('<h2> Nikku </h2>')
+          })
+
+          $('#Prepend').click(function () {
+            $('#box').prepend('<h2> Nikku </h2>')
+          })
+        </script>
+</body>
+</html>

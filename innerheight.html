@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Inner height</title>
+    <style>
+        div{
+            width: 100px;
+            height: 90px;
+            margin: 5px;
+            background-color: blue;
+            cursor: pointer;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+    <script>
+        $('div').one("click", function() {
+            $( this ).height( 50 ).css({
+                cursor: "auto",
+                background: "red",
+                
+            });
+        });
+    </script>
+</body>
+</html>

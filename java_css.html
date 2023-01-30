@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>java css</title>
+    <style>
+    #box1{
+        width: 100px;
+        color: gray;
+        background-color: blueviolet;
+    }
+    #box2{
+        width: 140px;
+        color: rgb(21, 185, 89);
+        background-color: rgb(17, 130, 230);
+    }
+    #box3{
+        width: 120px;
+        color: rgb(146, 35, 35);
+        background-color: rgb(12, 177, 25);
+    }
+    #box4{
+        width: 90px;
+        color: rgb(228, 39, 133);
+        background-color: brown;
+    }
+    div{
+        cursor: pointer;
+        height: 150px;
+        margin: 5px;
+        padding: 5px;
+        float: left;
+        font-size: 56px;
+    }
+
+    </style>
+</head>
+<body>
+    <p id="result">&nbsp;</p>
+    <div id="box1">1</div>
+    <div id="box2">2</div> 
+    <div id="box3">3</div>
+    <div id="box4">4</div>
+
+    <script>
+        $('div').click(function () {
+            var html = ["The Clicked div has the following style"];
+            var styleprops = $( this ).css([
+                "width","height","color","background-color","font-size",
+                
+            ])
+            console.log(styleprops);
+            $.each( styleprops, function (prop, value) {
+                console.log(prop+value);
+              html.push(prop + ":" + value);
+            })
+            $('#result').html(html.join("<br>"))
+        })
+    </script>
+</body>
+</html>

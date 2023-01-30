@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #box{
+            width: 50%;
+            padding: 10px;
+            margin: 10px;
+            height: 200px;
+            border: 2px solid black;
+            overflow: auto;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <h2>my name is nikku one</h2>
+        <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque maiores eos laboriosam voluptates suscipit sapiente. Provident explicabo consectetur repudiandae vel ex quisquam ipsum aperiam ipsam incidunt cumque asperiores maxime adipisci dicta, quibusdam nihil voluptatem totam, praesentium fugiat eveniet quia non accusantium corrupti nisi! Praesentium quia iusto doloremque voluptatem, soluta rem? Facere quisquam quasi facilis mollitia expedita consequatur, accusantium modi pariatur, dolor eaque soluta quidem laboriosam nihil dolorem! Nesciunt ea velit repellat quis minima. Sapiente quis ullam iure, eos voluptate, dignissimos sed quod aliquam nihil praesentium laboriosam reiciendis porro molestias eveniet adipisci repellendus odit distinctio cum at itaque alias possimus. Voluptas explicabo totam minima impedit at officia provident, sapiente voluptatum incidunt. Nulla dicta eaque deserunt odit aperiam impedit facilis minus, rerum, maiores nam sit. Maiores qui esse, dolor deleniti minus voluptates. Velit, fugiat fugit! Repudiandae, atque, distinctio molestiae aperiam repellendus vero, ullam sunt aliquid velit officia corrupti nisi laborum eaque. Perferendis sit ea doloribus eos odio officiis ipsa mollitia fuga voluptatibus similique omnis maxime quae sunt aliquid alias, officia nam. Voluptate iusto, iste debitis architecto incidunt dolorum minus ad nulla quia odio optio in tenetur amet voluptas consequatur impedit labore asperiores nesciunt? Voluptatibus amet vel eveniet laborum earum distinctio quaerat illo. adipisicing elit. Nisi expedita asperiores commodi.</p>
+    </div>
+
+    
+    <script>
+     $(document).ready(function () {
+        $('#box').scroll(function () {
+            console.log("You are scorlling")
+        })
+        $(window).resize(function () {
+            console.log("resizing")
+        })
+     })
+    </script>
+</body>
+</html>
